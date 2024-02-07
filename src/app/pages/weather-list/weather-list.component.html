@@ -1,0 +1,15 @@
+<div class="content-wrapper">
+  <app-weather-search (listWeather)="getData($event)"></app-weather-search>
+
+  <div class="weather-data">
+    <h1>{{ data?.location?.name }}</h1>
+    <div *ngIf="data" class="weather-data__main">
+      <div class="weather-data__main__temp">
+        <h2>{{ data?.current?.temp_c }}°C</h2>
+        <img [src]="data?.current?.condition?.icon" [alt]="data?.current?.condition?.text">
+      </div>
+      <div class="weather-data__main__condition">
+        <h3>{{ data?.current?.condition?.text }}</h3>
+      </div>
+  </div>
+</div>

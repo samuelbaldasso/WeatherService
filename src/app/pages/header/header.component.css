@@ -12,7 +12,7 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 20px;
   background-color: #fff;
@@ -28,7 +28,7 @@
 }
 
 .header ul li a {
-  margin: 0 10px;
+  margin: 0 20px;
   text-decoration: none;
   cursor: pointer;
 }

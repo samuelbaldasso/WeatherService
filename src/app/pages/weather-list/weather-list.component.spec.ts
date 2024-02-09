@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { WeatherListComponent } from './weather-list.component';
 import { Weather } from '../../models/weather.model';
+import { WeatherService } from '../../services/weather.service';
 
 describe('WeatherListComponent', () => {
   let component: WeatherListComponent;
@@ -22,7 +23,7 @@ describe('WeatherListComponent', () => {
     expect(component).toBeDefined();
   });
 
-  it('should get data', () => {
+  it('should get data by getData()', () => {
     const weather: Weather = {
       location: {
         name: "London",

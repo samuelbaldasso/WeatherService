@@ -3,6 +3,7 @@ import { Component, EventEmitter, Input, Output, input } from '@angular/core';
 import { Weather } from '../../models/weather.model';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-weather-list',
@@ -10,10 +11,12 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     WeatherSearchComponent,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   templateUrl: './weather-list.component.html',
-  styleUrl: './weather-list.component.css'
+  styleUrl: './weather-list.component.css',
+  providers: [HttpClientModule]
 })
 export class WeatherListComponent {
   data: any;

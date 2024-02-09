@@ -2,13 +2,15 @@ import { WeatherSearchComponent } from './../weather-search/weather-search.compo
 import { Component, EventEmitter, Input, Output, input } from '@angular/core';
 import { Weather } from '../../models/weather.model';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-weather-list',
   standalone: true,
   imports: [
     CommonModule,
-    WeatherSearchComponent
+    WeatherSearchComponent,
+    RouterModule
   ],
   templateUrl: './weather-list.component.html',
   styleUrl: './weather-list.component.css'

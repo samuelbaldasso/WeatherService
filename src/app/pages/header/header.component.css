@@ -1,0 +1,38 @@
+.header-logo img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  transform: scale(1);
+  animation: 2s infinite rotate;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header ul li a {
+  margin: 0 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header ul li a:hover {
+  color: #00f;
+}

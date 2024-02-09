@@ -38,3 +38,19 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  .content-wrapper input {
+    width: 100%;
+  }
+  .content-wrapper form {
+    flex-direction: column;
+  }
+  .content-wrapper button {
+    width: 100%;
+  }
+
+}

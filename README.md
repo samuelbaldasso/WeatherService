@@ -6,15 +6,15 @@ This is a simple weather application built with Angular. It allows users to sear
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/angular-weather-app.git
-   ```
+```bash
+git clone https://github.com/your-username/angular-weather-app.git
+```
 
 2. Run these next commands:
 
-  ```bash
-  npm install
-  ng serve
-  ```
+```bash
+npm install
+ng serve
+```
 
 Made with ❤️ by Samuel Baldasso - 2024

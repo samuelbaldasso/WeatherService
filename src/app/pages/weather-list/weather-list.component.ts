@@ -24,6 +24,5 @@ export class WeatherListComponent {
 
   getData(weather: Weather) {
     this.data = weather;
-    console.log(this.data);
   }
 }

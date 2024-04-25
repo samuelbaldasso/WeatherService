@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   line-height: 1.5;
   margin: 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -17,12 +18,12 @@ h1 {
   text-align: center;
 }
 
-footer {
-  margin-top: 20px;
-  padding: 16px;
-  text-align: center;
-}
-
 ul li {
   font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+  h1{
+    font-size: 1rem;
+  }
 }

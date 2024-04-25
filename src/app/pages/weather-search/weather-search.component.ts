@@ -18,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 export class WeatherSearchComponent {
   @Output() listWeather = new EventEmitter<Weather>();
   query: any;
-  weatherData: Weather = {} as Weather;
+  weatherData: Weather | null = null;
 
   constructor(
     private weatherService: WeatherService) { }
@@ -27,7 +27,6 @@ export class WeatherSearchComponent {
     this.weatherService.getWeather(query, lang).subscribe((data: Weather) => {
       this.weatherData = data;
       this.listWeather.emit(this.weatherData);
-      console.log(this.weatherData);
     });
   }
 }

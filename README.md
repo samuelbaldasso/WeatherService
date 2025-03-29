@@ -27,8 +27,8 @@ Antes de iniciar, você precisa ter instalado:
 Clone o repositório para sua máquina local e siga os comandos seguintes:
 
 ```bash
-git clone https://github.com/samuelbaldasso/Weather-TypeScript-Angular-Jasmine-Karma-WeatherAPI-RxJS.git
-cd Weather-TypeScript-Angular-Jasmine-Karma-WeatherAPI-RxJS
+git clone https://github.com/samuelbaldasso/WeatherService.git
+cd WeatherService
 npm install
 ng serve --o
 
